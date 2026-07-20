@@ -27,11 +27,11 @@ export default function Header() {
         </button>
 
         <nav className={mobileOpen ? 'main-nav open' : 'main-nav'}>
-          <NavLink className={navClass} to="/" onClick={closeMenu}>Home</NavLink>
-          <NavLink className={navClass} to="/about" onClick={closeMenu}>About</NavLink>
+          <NavLink className={navClass} to="/" onClick={closeMenu}>HOME</NavLink>
+          <NavLink className={navClass} to="/about" onClick={closeMenu}>ABOUT</NavLink>
 
           <div className="nav-group">
-            <NavLink className={navClass} to="/practice-areas" onClick={closeMenu}>Practice Areas</NavLink>
+            <NavLink className={navClass} to="/practice-areas" onClick={closeMenu}>PRACTICE AREAS</NavLink>
             <div className="mega-menu">
               <div>
                 <p className="eyebrow">Legal capabilities</p>
@@ -45,14 +45,14 @@ export default function Header() {
           </div>
 
           <div className="nav-group">
-            <NavLink className={navClass} to="/attorneys" onClick={closeMenu}>Attorneys</NavLink>
+            <NavLink className={navClass} to="/attorneys" onClick={closeMenu}>ATTORNEYS</NavLink>
             <div className="dropdown-menu">
               {attorneys.map(attorney => <Link key={attorney.slug} to={`/attorneys/${attorney.slug}`} onClick={closeMenu}>{attorney.name}</Link>)}
             </div>
           </div>
 
-          <NavLink className={navClass} to="/insights" onClick={closeMenu}>Insights</NavLink>
-          <NavLink className="button button-small button-outline" to="/contact" onClick={closeMenu}>Contact Us</NavLink>
+          <NavLink className={navClass} to="/insights" onClick={closeMenu}>INSIGHTS</NavLink>
+          <NavLink className="button button-small button-outline" to="/contact" onClick={closeMenu}>CONTACT US</NavLink>
         </nav>
       </div>
     </header>

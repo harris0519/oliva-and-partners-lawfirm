@@ -30,7 +30,19 @@ export default function Footer() {
           <p>Monday–Friday, 8:00 AM–5:00 PM</p>
         </div>
       </div>
-      <div className="container footer-bottom">© 2026 OLIVA &amp; PARTNERS LAW FIRM. All Rights Reserved.</div>
+      <div className="container footer-bottom">
+  © 2026 OLIVA &amp; PARTNERS LAW FIRM. All Rights Reserved.
+  <span style={{ margin: "0 8px" }}>|</span>
+  Powered by{" "}
+  <a
+    href="https://www.socexconsulting.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footer-link"
+  >
+    SOCEX
+  </a>
+</div>
     </footer>
   );
 }
