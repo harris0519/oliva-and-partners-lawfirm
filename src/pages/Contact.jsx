@@ -4,7 +4,7 @@ import PageHero from '../components/PageHero';
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const submit = e => { e.preventDefault(); setSent(true); e.currentTarget.reset(); };
-  return <><PageHero eyebrow="Contact us" title="Tell us how we can assist you." text="Send us a brief description of your concern. A member of the firm will respond using the contact details you provide." /><section className="section"><div className="container contact-grid"><div><p className="eyebrow">Firm information</p><h2>OLIVA & PARTNERS LAW FIRM</h2><p>Units 28 & 30, 2nd Floor,
+  return <><PageHero eyebrow="Contact us" title="TELL US HOW WE CAN ASSIST YOU." text="Send us a brief description of your concern. A member of the firm will respond using the contact details you provide." /><section className="section"><div className="container contact-grid"><div><p className="eyebrow">Firm information</p><h2>OLIVA & PARTNERS LAW FIRM</h2><p>Units 28 & 30, 2nd Floor,
     Facilities Centre Building.,
     548 Shaw Blvd.,
     Mandaluyong City, 1552, Philippines</p><p>Tel. Nos. (+632) 8535-9320 | 
