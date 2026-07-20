@@ -1,0 +1,7 @@
+import PageHero from '../components/PageHero';
+
+export default function About() {
+  return <><PageHero eyebrow="About the firm" title="A legal partner focused on clarity, trust, and lasting value." text="We provide thoughtful legal advice and dedicated representation for clients facing important business and personal decisions." />
+    <section className="section"><div className="container split"><div><p className="eyebrow">Our approach</p><h2>Law practiced with purpose.</h2></div><div className="prose"><p>Oliva &amp; Partners is committed to understanding each client’s objectives before recommending a course of action. We believe good legal counsel should be clear, practical, and responsive.</p><p>Whether advising on a transaction, resolving a dispute, or supporting day-to-day operations, our goal is to help clients manage risk and move forward with confidence.</p></div></div></section>
+    <section className="section section-muted"><div className="container card-grid three"><div className="value-card"><span>01</span><h3>Integrity</h3><p>We provide candid advice and act with professionalism in every engagement.</p></div><div className="value-card"><span>02</span><h3>Excellence</h3><p>We approach every matter with preparation, discipline, and attention to detail.</p></div><div className="value-card"><span>03</span><h3>Partnership</h3><p>We build lasting relationships through accessibility, trust, and shared purpose.</p></div></div></section></>;
+}
