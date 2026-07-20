@@ -35,7 +35,7 @@ export default function Header() {
             <div className="mega-menu">
               <div>
                 <p className="eyebrow">Legal capabilities</p>
-                <h3>Solutions built around your needs.</h3>
+                <h3>SOLUTIONS BUILT AROUND YOUR NEEDS.</h3>
                 <p>Explore focused legal services for business, property, employment, disputes, taxation, and technology.</p>
               </div>
               <div className="mega-links">
