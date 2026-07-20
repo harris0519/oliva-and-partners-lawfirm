@@ -18,8 +18,7 @@ export default function Header() {
 
       <div className="container navbar">
         <Link className="brand" to="/" onClick={closeMenu} aria-label="Oliva & Partners home">
-          <img className="brand-logo"   src={`${import.meta.env.BASE_URL}images/oliva-partners-mark.png`} alt="" />
-          <span className="brand-copy"><strong>OLIVA &amp; PARTNERS</strong><small>LAW FIRM</small></span>
+          <img className="brand-logo"   src={`${import.meta.env.BASE_URL}images/oliva-partners-full-logo - resized.png`} alt="" />
         </Link>
 
         <button className="menu-toggle" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle navigation" aria-expanded={mobileOpen}>
