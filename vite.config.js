@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/oliva-and-partner-lawfirm/',
+  base: '/oliva-and-partners-lawfirm/',
 });
