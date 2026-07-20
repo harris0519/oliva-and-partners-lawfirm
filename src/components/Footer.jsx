@@ -19,12 +19,18 @@ export default function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <p>Metro Manila, Philippines</p>
-          <a href="mailto:info@olivapartners.com">info@olivapartners.com</a>
+          <p>Units 28 & 30, 2nd Floor,
+            Facilities Centre Building.,
+            548 Shaw Blvd.,
+            Mandaluyong City, 1552, Philippines</p>
+          <p>Tel. Nos.
+            (+632) 8535-9320
+            (+632) 8535-9231</p>
+          <a href="mailto:info@olivapartners.com">olivaandpartner@dof.law</a>
           <p>Monday–Friday, 8:00 AM–5:00 PM</p>
         </div>
       </div>
-      <div className="container footer-bottom">© 2026 Oliva &amp; Partners Law Firm. All Rights Reserved.</div>
+      <div className="container footer-bottom">© 2026 OLIVA &amp; PARTNERS LAW FIRM. All Rights Reserved.</div>
     </footer>
   );
 }

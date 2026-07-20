@@ -12,14 +12,14 @@ export default function Header() {
       <div className="topbar">
         <div className="container topbar-inner">
           <span>Trusted legal counsel for businesses and individuals</span>
-          <a href="mailto:info@olivapartners.com">info@olivapartners.com</a>
+          <a href="mailto:info@olivapartners.com">olivaandpartners@dof.law.com</a>
         </div>
       </div>
 
       <div className="container navbar">
         <Link className="brand" to="/" onClick={closeMenu} aria-label="Oliva & Partners home">
           <img className="brand-logo"   src={`${import.meta.env.BASE_URL}images/oliva-partners-mark.png`} alt="" />
-          <span className="brand-copy"><strong>Oliva &amp; Partners</strong><small>Law Firm</small></span>
+          <span className="brand-copy"><strong>OLIVA &amp; PARTNERS</strong><small>LAW FIRM</small></span>
         </Link>
 
         <button className="menu-toggle" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle navigation" aria-expanded={mobileOpen}>
