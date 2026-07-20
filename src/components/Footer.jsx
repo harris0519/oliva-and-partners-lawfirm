@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <Link className="footer-logo-link" to="/" aria-label="Oliva & Partners home">
-            <img className="footer-logo" src="/images/oliva-partners-logo.png" alt="Oliva & Partners Law Firm" />
+            <img className="footer-logo" src={`${import.meta.env.BASE_URL}images/oliva-partners-logo.png`} alt="Oliva & Partners Law Firm" />
           </Link>
           <p>Practical legal advice, dedicated representation, and long-term partnerships built on trust.</p>
         </div>

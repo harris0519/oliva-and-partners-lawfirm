@@ -18,7 +18,7 @@ export default function Header() {
 
       <div className="container navbar">
         <Link className="brand" to="/" onClick={closeMenu} aria-label="Oliva & Partners home">
-          <img className="brand-logo" src="/images/oliva-partners-mark.png" alt="" />
+          <img className="brand-logo"   src={`${import.meta.env.BASE_URL}images/oliva-partners-mark.png`} alt="" />
           <span className="brand-copy"><strong>Oliva &amp; Partners</strong><small>Law Firm</small></span>
         </Link>
 
