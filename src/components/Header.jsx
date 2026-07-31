@@ -45,8 +45,13 @@ export default function Header() {
 
           <div className="nav-group">
             <NavLink className={navClass} to="/attorneys" onClick={closeMenu}>ATTORNEYS</NavLink>
-            <div className="dropdown-menu">
-              {attorneys.map(attorney => <Link key={attorney.slug} to={`/attorneys/${attorney.slug}`} onClick={closeMenu}>{attorney.name}</Link>)}
+            <div className="dropdown-menu attorneys-menu">
+              {attorneys.map(attorney => (
+                <Link key={attorney.slug} to={`/attorneys/${attorney.slug}`} onClick={closeMenu}>
+                  <strong>{attorney.name}</strong>
+                  <small>{attorney.role}</small>
+                </Link>
+              ))}
             </div>
           </div>
 

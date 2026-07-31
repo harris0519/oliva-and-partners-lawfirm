@@ -8,12 +8,13 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Clarity. Strategy. Results.</p>
-            <h1>LEGAL SOLUTIONS GROUNDED IN EXPERIENCE AND BUILT AROUND YOU.</h1>
-            <p className="lead">Oliva &amp; Partners provides responsive, practical, and strategic legal counsel to businesses, families, and individuals.</p>
+            <h1>YOUR TRUSTED LEGAL PARTNER,
+              EVOLVING FOR THE FUTURE</h1>
+            <p className="lead">ADVISING BUSINESSES, RESOLVING CHALLENGES.
+              BUILDING LASTING PARTNERSHIP.</p>
             <div className="actions"><Link className="button" to="/contact">Schedule a Consultation</Link><Link className="text-link" to="/practice-areas">Explore our capabilities →</Link></div>
           </div>
           <div className="hero-panel">
-            <span className="panel-number">01</span>
             <h2>COUNSEL THAT SEES THE WHOLE PICTURE.</h2>
             <p>We combine legal knowledge, commercial understanding, and personal attention to help clients make informed decisions.</p>
           </div>
@@ -24,9 +25,9 @@ export default function Home() {
         <div className="container">
           <div className="section-heading"><div><p className="eyebrow">Practice areas</p><h2>COMPREHENSIVE LEGAL SUPPORT</h2></div><Link className="text-link" to="/practice-areas">View all practice areas →</Link></div>
           <div className="card-grid three">
-            {practiceAreas.slice(0, 6).map((area, i) => (
+            {practiceAreas.map(area => (
               <Link className="service-card" to={`/practice-areas/${area.slug}`} key={area.slug}>
-                <span>0{i + 1}</span><h3>{area.title.toUpperCase()}</h3><p>{area.short}</p><strong>Learn more →</strong>
+                <h3>{area.title.toUpperCase()}</h3><p>{area.short}</p><strong>Learn more →</strong>
               </Link>
             ))}
           </div>
@@ -37,18 +38,18 @@ export default function Home() {
         <div className="container split">
           <div><p className="eyebrow">Why Oliva &amp; Partners</p><h2>TRUSTED ADVICE. PRACTICAL DIRECTION. STRONG REPRESENTATION.</h2></div>
           <div className="feature-list">
-            <div><strong>01</strong><span><h3>Client-centered service</h3><p>Clear communication and legal strategies aligned with your priorities.</p></span></div>
-            <div><strong>02</strong><span><h3>Business-minded approach</h3><p>Advice that considers legal exposure, operational realities, and long-term objectives.</p></span></div>
-            <div><strong>03</strong><span><h3>Responsive representation</h3><p>Timely support from professionals committed to protecting your interests.</p></span></div>
+            <div><span><h3>Client-centered service</h3><p>Clear communication and legal strategies aligned with your priorities.</p></span></div>
+            <div><span><h3>Business-minded approach</h3><p>Advice that considers legal exposure, operational realities, and long-term objectives.</p></span></div>
+            <div><span><h3>Responsive representation</h3><p>Timely support from professionals committed to protecting your interests.</p></span></div>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <div className="section-heading"><div><p className="eyebrow">Our attorneys</p><h2>MEET THE PEOPLE BEHIND THE PRACTICE</h2></div><Link className="text-link" to="/attorneys">Meet the full team →</Link></div>
+          <div className="section-heading"><div><p className="eyebrow">Our attorneys</p><h2>MEET THE PEOPLE BEHIND THE PRACTICE</h2></div><Link className="text-link" to="/attorneys">View all lawyers →</Link></div>
           <div className="card-grid three">
-            {attorneys.map(attorney => <Link className="person-card" to={`/attorneys/${attorney.slug}`} key={attorney.slug}><div className="portrait-placeholder">{attorney.name.split(' ').slice(-1)[0][0]}</div><p className="eyebrow">{attorney.role}</p><h3>{attorney.name.toUpperCase()}</h3><p>{attorney.focus}</p></Link>)}
+            {attorneys.slice(0, 3).map(attorney => <Link className="person-card" to={`/attorneys/${attorney.slug}`} key={attorney.slug}><div className="portrait-placeholder">{attorney.name.split(' ').slice(-1)[0][0]}</div><p className="eyebrow">{attorney.role}</p><h3>{attorney.name.toUpperCase()}</h3><p>{attorney.focus}</p></Link>)}
           </div>
         </div>
       </section>
