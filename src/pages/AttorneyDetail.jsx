@@ -6,5 +6,6 @@ export default function AttorneyDetail() {
   const { slug } = useParams();
   const attorney = attorneys.find(item => item.slug === slug);
   if (!attorney) return <PageHero eyebrow="Attorney" title="Attorney profile not found" />;
-  return <><PageHero eyebrow={attorney.role} title={attorney.name.toUpperCase()} text={attorney.focus} /><section className="section"><div className="container attorney-profile"><div className="portrait-placeholder profile">{attorney.name.split(' ').slice(-1)[0][0]}</div><div className="prose"><h2>PROFESSIONAL PROFILE</h2><p>{attorney.bio}</p><h3>Credentials</h3><ul>{attorney.credentials.map(item => <li key={item}>{item}</li>)}</ul><Link className="button" to="/contact">Contact the Firm</Link></div></div></section></>;
+  const bioParagraphs = Array.isArray(attorney.bio) ? attorney.bio : [attorney.bio];
+  return <><PageHero eyebrow={attorney.role} title={attorney.name.toUpperCase()} text={attorney.focus} /><section className="section"><div className="container attorney-profile"><div className="portrait-placeholder profile">{attorney.name.split(' ').slice(-1)[0][0]}</div><div className="prose"><h2>PROFESSIONAL PROFILE</h2>{bioParagraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<h3>Credentials</h3><ul>{attorney.credentials.map(item => <li key={item}>{item}</li>)}</ul><Link className="button" to="/contact">Contact the Firm</Link></div></div></section></>;
 }
