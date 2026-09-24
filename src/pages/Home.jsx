@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { attorneys, insights, practiceAreas } from '../data/siteData';
+import AttorneyPortrait from '../components/AttorneyPortrait';
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
         <div className="container">
           <div className="section-heading"><div><p className="eyebrow">Our attorneys</p><h2>MEET THE PEOPLE BEHIND THE PRACTICE</h2></div><Link className="text-link" to="/attorneys">View all lawyers →</Link></div>
           <div className="card-grid three">
-            {attorneys.slice(0, 3).map(attorney => <Link className="person-card" to={`/attorneys/${attorney.slug}`} key={attorney.slug}><div className="portrait-placeholder">{attorney.name.split(' ').slice(-1)[0][0]}</div><p className="eyebrow">{attorney.role}</p><h3>{attorney.name.toUpperCase()}</h3><p>{attorney.focus}</p></Link>)}
+            {attorneys.slice(0, 3).map(attorney => <Link className="person-card" to={`/attorneys/${attorney.slug}`} key={attorney.slug}><AttorneyPortrait attorney={attorney} /><p className="eyebrow">{attorney.role}</p><h3>{attorney.name.toUpperCase()}</h3><p>{attorney.focus}</p></Link>)}
           </div>
         </div>
       </section>

@@ -441,6 +441,13 @@ textarea {
   margin-bottom: 25px
 }
 
+img.portrait-placeholder {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .portrait-placeholder.tall {
   height: 360px
 }

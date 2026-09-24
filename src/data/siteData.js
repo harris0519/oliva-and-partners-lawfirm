@@ -252,10 +252,38 @@ const attorneyProfiles = {
   }
 };
 
+const attorneyPortraits = {
+  'rommel-oliva': 'rvo.jpg',
+  'reagan-oliva': 'rco.jpg',
+  'elmar-malapitan': 'ehm.jpg',
+  'ahda-pajo': 'abp.jpg',
+  'lawrence-anthony-bautista': 'lbb.jpg',
+  'thomas-alvin-morada': 'tbm.jpg',
+  'darlene-bibat': 'dbb.jpg',
+  'elizabeth-robles': 'elr.jpg',
+  'pamela-faller': 'plf.jpg'
+};
+
+const attorneyOrder = [
+  'reagan-oliva',
+  'rommel-oliva',
+  'nesauro-firme',
+  'elmar-malapitan',
+  'ahda-pajo',
+  'pamela-faller',
+  'lawrence-anthony-bautista',
+  'thomas-alvin-morada',
+  'darlene-bibat',
+  'elizabeth-robles'
+];
+
 export const attorneys = baseAttorneys.map(attorney => ({
   ...attorney,
-  ...attorneyProfiles[attorney.slug]
-}));
+  ...attorneyProfiles[attorney.slug],
+  image: attorneyPortraits[attorney.slug]
+    ? `${import.meta.env.BASE_URL}images/attorneys/${attorneyPortraits[attorney.slug]}`
+    : undefined
+})).sort((a, b) => attorneyOrder.indexOf(a.slug) - attorneyOrder.indexOf(b.slug));
 
 export const insights = [
   {
