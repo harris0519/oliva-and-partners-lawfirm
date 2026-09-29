@@ -558,6 +558,26 @@ img.portrait-placeholder {
   padding: 12px
 }
 
+.contact-error {
+  margin: 0;
+  padding: 12px;
+  color: #812d2d;
+  background: #fff0ed;
+}
+
+.contact-form button:disabled {
+  cursor: wait;
+  opacity: .7;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .footer {
   background: var(--navy2);
   color: #cad3db;

@@ -12,7 +12,7 @@ export default function Header() {
       <div className="topbar">
         <div className="container topbar-inner">
           <span>Trusted legal counsel for businesses and individuals</span>
-          <a href="mailto:info@olivapartners.com">olivaandpartners@dof.law.com</a>
+          <a href="mailto:olivaandpartners@dof.law">olivaandpartners@dof.law</a>
         </div>
       </div>
 

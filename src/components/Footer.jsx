@@ -26,7 +26,7 @@ export default function Footer() {
           <p>Tel. Nos.
             (+632) 8535-9320
             (+632) 8535-9231</p>
-          <a href="mailto:info@olivapartners.com">olivaandpartner@dof.law</a>
+          <a href="mailto:olivaandpartners@dof.law">olivaandpartners@dof.law</a>
           <p>Monday–Friday, 8:00 AM–5:00 PM</p>
         </div>
       </div>
