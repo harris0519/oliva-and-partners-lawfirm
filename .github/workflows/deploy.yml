@@ -39,7 +39,7 @@ jobs:
 
       - name: Build website
         env:
-          VITE_CONTACT_API_URL: ${{ vars.VITE_CONTACT_API_URL }}
+          VITE_CONTACT_API_URL: https://hrlportal.onrender.com/api/contact
           VITE_SITE_BASE: ${{ vars.VITE_SITE_BASE }}
         run: npm run build
 

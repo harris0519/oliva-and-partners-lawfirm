@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PageHero from '../components/PageHero';
 import { practiceAreas } from '../data/siteData';
 
-const contactApiUrl = import.meta.env.VITE_CONTACT_API_URL || (import.meta.env.DEV ? '/api/contact' : '');
+const contactApiUrl = import.meta.env.VITE_CONTACT_API_URL || (import.meta.env.DEV ? '/api/contact' : 'https://hrlportal.onrender.com/api/contact');
 
 export default function Contact() {
   const [status, setStatus] = useState('idle');
