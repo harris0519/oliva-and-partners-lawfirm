@@ -265,9 +265,9 @@ const attorneyPortraits = {
 };
 
 const attorneyOrder = [
-  'reagan-oliva',
   'rommel-oliva',
   'nesauro-firme',
+  'reagan-oliva',
   'elmar-malapitan',
   'ahda-pajo',
   'pamela-faller',
