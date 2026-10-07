@@ -5,7 +5,7 @@ export default function About() {
     <>
       <PageHero
         eyebrow="About the firm"
-        title="OLIVA & PARTNES LAW FIRM"
+        title="OLIVA & PARTNERS LAW FIRM"
         text="A tradition of quality legal service grounded in experience, advocacy, and ethical practice."
       />
 
@@ -17,17 +17,15 @@ export default function About() {
           </div>
 
           <div className="prose">
-            <p><strong>OLIVA &amp; PARTNERS LAW FIRM</strong> is formed in June 2008 after Atty. Rommel V. Oliva and Justice Nesauro H. Firme formalized their law partnership which started since June 2004.</p>
+            <p><strong>OLIVA &amp; PARTNERS LAW FIRM</strong> traces its beginnings to the professional collaboration between Atty. Rommel V. Oliva and Justice Nesauro H. Firme, which commenced in June 2004. In June 2008, they formalized their law partnership under the name <strong>OLIVA FIRME &amp; ASSOCIATES LAW FIRM.</strong> Following the appointment of Justice Firme as a Member of the Judicial and Bar Council (JBC), representing the Academe, the Firm was subsequently renamed <strong>OLIVA &amp; PARTNERS LAW FIRM</strong>, reflecting its continued growth and the expanding role of its lawyers in the Firm’s practice.</p>
 
-            <p>Atty. Oliva is a graduate of University of Santo Tomas Faculty of Civil Law in 1997 and has worked both in government offices and in other law firms before he decided to put up the Law Firm. Justice Firme on the other hand is likewise a graduate of University of Santo Tomas Faculty of Civil Law in 2003 and right after hurdling the bar examination given by the Supreme Court, he joined Atty. Oliva in the law office. In view of his recent appointment as a Regular Member of the Judicial and Bar Council representing the Academe, he is currently on leave from the law firm.</p>
+            <p>Atty. Oliva is a graduate of the University of Santo Tomas Faculty of Civil Law (1997) and has worked in government offices and other law firms prior to establishing his own legal practice. Justice Firme is likewise a graduate of the University of Santo Tomas Faculty of Civil Law (2003) and joined Atty. Oliva shortly after passing the Bar Examinations. Following his appointment to the Judicial and Bar Council, Justice Firme has been on leave from the Firm.</p>
 
-            <p>Through years of legal practice, the Law Firm has rendered various legal services to our retaining clients by specializing in corporate legal practice, which necessarily includes the drafting of contracts, rendition of legal opinion, actual handling of all cases (labor, civil and criminal) of our clients, as well as attendance in board meetings.</p>
+            <p>Through the years, the Firm has rendered a wide range of legal services to its retaining clients, with particular emphasis on corporate legal practice, including the drafting and review of contracts, rendition of legal opinions, representation in labor, civil and criminal cases, and participation in board and corporate meetings.</p>
 
-            <p>Since 2008, the Law Firm has gradually expanded in terms of the number of retaining clients as well as hiring associate lawyers. Some of our long-time retaining clients are Hon. Secretary Benhur Abalos of DILG, Extra Excel International (Phils.), Inc., Allegro Resources Corporation, Counterflow Movers Inc., Hypro Construction and Development Corporation, Music Museum Group, Inc., Airtropolis Consolidators Phils. Inc., Mind Alliance Ventures, Inc. (owner of Memoxpress), Sahara Games and Amusement Phils. Corp., SOS Children’s Villages Inc., Skymed Pharma Distributor, Driven By Passion, Inc. (owner of Primadonna), Mr. Quickie, Inc. and among others.</p>
+            <p>Since its formal establishment in 2008, the Firm has steadily expanded both its client base and its team of lawyers who work closely with the Firm’s partners in serving its clients and handling its growing legal practice.</p>
 
-            <p>Meanwhile, the Law Firm has hired full time associate lawyers Elmar H. Malapitan (SSC-R), Pamela L. Faller (San Beda), Ahda B. Pajo (MLQU), Lawrence Anthony Bautista (JRU), Thomas Alvin Morada (JRU), Darlene B. Bibat (JRU), and Elizabeth L. Robles (MLC) to meet the demands of the clients.</p>
-
-            <p>The expansion of the Law Firm portrays the advocacy and desire of Atty. Oliva and Justice Firme to render quality legal service to its clients within the bounds of ethical measures.</p>
+            <p>The Firm’s lawyers include Atty. Reagan G. Castillo-Oliva (UST), Atty. Pamela L. Faller (San Beda), Atty. Ahda B. Pajo (MLQU), Atty. Elmar H. Malapitan (SSC-R), Atty. Lawrence Anthony Bautista (JRU), Atty. Thomas Alvin Morada (JRU), Atty. Darlene B. Bibat (JRU), and Atty. Elizabeth L. Robles (MLC). Working collaboratively with the Firm’s partners, they form an integral part of the Firm’s professional team and contribute their respective experience and areas of practice in addressing the legal requirements of its clients.</p>
           </div>
         </div>
       </section>
