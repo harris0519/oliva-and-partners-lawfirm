@@ -281,7 +281,7 @@ export const attorneys = baseAttorneys.map(attorney => ({
   ...attorney,
   ...attorneyProfiles[attorney.slug],
   image: attorneyPortraits[attorney.slug]
-    ? `${import.meta.env.BASE_URL}images/attorneys/${attorneyPortraits[attorney.slug]}`
+    ? `${import.meta.env?.BASE_URL || '/'}images/attorneys/${attorneyPortraits[attorney.slug]}`
     : undefined
 })).sort((a, b) => attorneyOrder.indexOf(a.slug) - attorneyOrder.indexOf(b.slug));
 
